@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historias que Construyen Futuro | 2026</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <div class="top-bar">
         <div class="container top-flex">
-            <span class="support-text">Impulsado por la convocatoria de divulgación digital:</span>
-            <div class="logos-aliados">
-                <a href="https://www.facebook.com/KawsayMuju/" target="_blank" class="link-logo">
-                    <img src="imagenes/Logo Kawsay Muju.png" alt="Kawsay Muju" class="ong-logo-large">
-                </a>
-                <a href="https://jovenesenmovimiento.org/?view=featured" target="_blank" class="link-logo">
-                    <img src="imagenes/Logo JeM sin año vertical-04.png" alt="Jóvenes en Movimiento" class="ong-logo-large">
-                </a>
-            </div>
+            <a href="https://www.facebook.com/KawsayMuju/" target="_blank" class="link-logo logo-left">
+                <img src="imagenes/Logo Kawsay Muju.png" alt="Kawsay Muju" class="ong-logo-large">
+            </a>
+
+            <a href="https://jovenesenmovimiento.org/?view=featured" target="_blank" class="link-logo logo-right">
+                <img src="imagenes/Logo JeM sin año vertical-04.png" alt="Jóvenes en Movimiento" class="ong-logo-large">
+            </a>
         </div>
     </div>
 
@@ -51,13 +49,14 @@
                     <span class="tag-proyecto">Convocatoria 2026</span>
                     <h1>Narrando el impacto de <span class="text-highlight">nuestra generación</span></h1>
                     <p>
-                        Somos un equipo juvenil trabajando actualmente en el <strong>Centro COMETA</strong>. Bajo la convocatoria de <em>Kawsay Muju</em> y <em>Jóvenes en Movimiento</em>, lideramos la divulgación digital de los proyectos <strong>"Germinando Ideas"</strong> y <strong>"Sublimando Sueños"</strong>, visibilizando los procesos de reinserción y talento de las y los jóvenes.
+                        Somos un equipo juvenil trabajando bajo la convocatoria de Divulgación Digital de la fundación <strong>Kawsay Muju</strong> y el proyecto <strong>Jóvenes en Movimiento</strong>. Actualmente estamos trabajando con dos iniciativas juveniles del programa <strong>COMETA</strong>: <strong>Germinando Emprendimientos</strong> y <strong>Diseñando Sueños</strong>, visibilizando los procesos de reinserción y talento de las y los jóvenes.
                     </p>
                     <div class="cta-group">
                         <a href="#emprendimientos" class="btn btn-primary">Ver Emprendimientos</a>
                         <a href="#equipo" class="btn btn-outline">¿Quiénes somos?</a>
                     </div>
                 </div>
+
                 <div class="video-container">
                     <div class="video-wrapper">
                         <video autoplay muted loop playsinline class="video-hero">
@@ -72,17 +71,16 @@
 
         <section id="emprendimientos" class="section bg-soft">
             <div class="container">
-                <h2 class="section-title">Emprendimientos del Centro COMETA <span class="text-secondary">en Divulgación</span></h2>
+                <h2 class="section-title">Iniciativas juveniles del centro cometa <span class="text-secondary">La.Com.Pro laboratorio productivo cometa</span></h2>
                 <p class="section-intro">Te presentamos los proyectos de vida en los que estamos trabajando para dar a conocer su impacto social.</p>
                 
                 <div class="stories-grid">
                     <div class="story-card anim-card">
                         <div class="story-img-wrapper">
-                            <img src="imagenes/Logo Kawsay Muju.png" alt="Germinando Ideas">
-                            
+                            <img src="imagenes/germinando_idex.png" alt="Germinando Emprendimientos">
                         </div>
                         <div class="story-body">
-                            <h3>Germinando ideas</h3>
+                            <h3>Germinando Emprendimientos</h3>
                             <p>Producción de hortalizas sostenibles. Un espacio donde la paciencia y el cuidado se traducen en vida.</p>
                             <a href="divulgacion.html?proyecto=germinando" class="btn-text">Conocer más sobre el proceso →</a>
                         </div>
@@ -90,7 +88,7 @@
 
                     <div class="story-card anim-card">
                         <div class="story-img-wrapper">
-                            <img src="imagenes/Logo Kawsay Muju.png" alt="Sublimando Sueños">
+                            <img src="imagenes/disenandoSuenos_index.png" alt="Diseñando Sueños">
                         </div>
                         <div class="story-body">
                             <h3>Diseñando Sueños</h3>
@@ -155,14 +153,17 @@
             <p><strong>Historias que Construyen Futuro • 2026</strong></p>
             <p class="small">Proyecto impulsado por <strong>Kawsay Muju</strong> y <strong>Jóvenes en Movimiento</strong> en colaboración con el <strong>Centro COMETA</strong>.</p>
             <hr class="footer-divider">
-            <p class="credits">Página desarrollada por el Colectivo <strong>Historias que Construyen Futuro</strong> &copy; Todos los derechos reservados impulsados por <strong>Kawsay Muju</strong> y <strong>Jóvenes en Movimiento</strong>.</p>
+            <p class="credits">Página desarrollada por el Colectivo <strong>Historias que Construyen Futuro</strong> &copy; Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script>
         const btn = document.querySelector('.menu-toggle');
         const menu = document.querySelector('.nav-menu');
-        btn.onclick = () => menu.classList.toggle('active');
+
+        btn.onclick = () => {
+            menu.classList.toggle('active');
+        };
     </script>
 </body>
 </html>
