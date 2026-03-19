@@ -698,9 +698,10 @@ img {
     }
 
     .top-flex {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        gap: 10px;
     }
 
     .header-container {
