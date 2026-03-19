@@ -255,14 +255,41 @@
         };
 
         function crearGaleria(folder) {
+            const descripciones = {
+                ds: [
+                    "Capacitaciones con las iniciativas",
+                    "Capacitaciones con las iniciativas",
+                    "Sesiones prácticas",
+                    "Presentación de iniciativa",
+                    "Sesión práctica de manejo de maquinaria",
+                    "Preparación de alimentación para capacitaciones",
+                    "Presentación de iniciativa",
+                    "Capacitaciones con las iniciativas",
+                    "Presentación de iniciativa",
+                    "Presentación de iniciativa"
+                ],
+                ge: [
+                    "Capacitaciones con las iniciativas",
+                    "Capacitaciones con las iniciativas",
+                    "Capacitaciones con las iniciativas",
+                    "Sesión práctica de producción",
+                    "Preparación de alimentación para capacitaciones",
+                    "Avance de la producción",
+                    "Construcción de huerto hidropónico",
+                    "Construcción de huerto hidropónico",
+                    "Avance de la producción",
+                    "Construcción de huerto hidropónico"
+                ]
+            };
+        
             const items = [];
             for (let i = 1; i <= 10; i++) {
                 items.push({
                     jpg: `imagenes/carrusel/${folder}/${i}.jpg`,
                     jpeg: `imagenes/carrusel/${folder}/${i}.jpeg`,
                     png: `imagenes/carrusel/${folder}/${i}.png`,
-                    title: `Foto ${i}`,
-                    desc: `Foto ${i}`
+                    title: descripciones[folder][i - 1],
+                    desc: ""
                 });
             }
             return items;
